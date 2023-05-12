@@ -1,0 +1,10 @@
+E:\Documents\Personal\Coding\Rust\epub-demo\epub_demo\target-profiling\release\deps\regex_syntax-5ccaad9769927889.rmeta: C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\lib.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\literals.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\parser.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\unicode.rs
+
+E:\Documents\Personal\Coding\Rust\epub-demo\epub_demo\target-profiling\release\deps\libregex_syntax-5ccaad9769927889.rlib: C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\lib.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\literals.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\parser.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\unicode.rs
+
+E:\Documents\Personal\Coding\Rust\epub-demo\epub_demo\target-profiling\release\deps\regex_syntax-5ccaad9769927889.d: C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\lib.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\literals.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\parser.rs C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\unicode.rs
+
+C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\lib.rs:
+C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\literals.rs:
+C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\parser.rs:
+C:\Users\Tadgh\ Henry\.cargo\registry\src\github.com-1ecc6299db9ec823\regex-syntax-0.3.9\src\unicode.rs:

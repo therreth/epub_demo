@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=E:\Documents\Personal\Coding\Rust\epub-demo\epub_demo\target-profiling\release\build\typenum-1caf29b6e9801f0d\out\consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=E:\Documents\Personal\Coding\Rust\epub-demo\epub_demo\target-profiling\release\build\typenum-1caf29b6e9801f0d\out\op.rs
