@@ -1,0 +1,87 @@
+[
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/5770.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/grilleveryday.epub",
+    "title": "Grill Every Day"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/5229.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/howtobuildahovercraft.epub",
+    "title": "How To Build A Hovercraft"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/8348.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/howtocooklikeatopchef.epub",
+    "title": "How to Cook Like a Top Chef"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/9663.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/howtomakehanddrawnmaps.epub",
+    "title": "How to Make Hand-Drawn Maps"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/4986.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/howtomakeit.epub",
+    "title": "How to Make It"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/643.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/howtoruleatdrawing.epub",
+    "title": "How to Rule at Drawing: 50 Tips and Tricks for Sketching and Doodling"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/1271.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/howtoruleatphotography.epub",
+    "title": "How to Rule at Photography: 50 Tips and Tricks for Using Your Phone’s Camera"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/7483.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/masteringartofchinesecook.epub",
+    "title": "Mastering the Art of Chinese Cooking"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/9012.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/parsongraytradequilts.epub",
+    "title": "Parson Gray Trade Quilts"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/6006.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/pastabyhandacollectionofitalysregionalhand-shapedpasta.epub",
+    "title": "Pasta by Hand"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/1161.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/pythonone-liners.epub",
+    "title": "Python One-Liners: Write Concise, Eloquent Python Like a Professional"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/3446.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/quickandeasykoreancooking.epub",
+    "title": "Quick & Easy Korean Cooking"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/7099.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/sausagemaking.epub",
+    "title": "Sausage Making"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/5192.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/stitchencyclopedia_crochet.epub",
+    "title": "Stitch Encyclopedia: Crochet"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/686.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/stitchencyclopedia_knitting.epub",
+    "title": "Stitch Encyclopedia: Knitting"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/2225.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/sweetpapercrafts.epub",
+    "title": "Sweet Paper Crafts"
+  },
+  {
+    "cover_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/covers/1003.jpg",
+    "book_location": "E:/Documents/Personal/Coding/Rust/epub-demo/epub_demo/sample_books/urawaza.epub",
+    "title": "Urawaza"
+  }
+]

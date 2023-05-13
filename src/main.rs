@@ -36,6 +36,23 @@ fn create_book_vec(items: &Vec<String>, write_directory: &String) -> Vec<Book> {
 
     return books;
 }
+fn create_book_item(items: &Vec<String>, write_directory: &String) -> Vec<Book> {
+    let mut books: Vec<Book> = Vec::new();
+    for item in items {
+        let title = EpubDoc::new(&item).unwrap().mdata("title").unwrap();
+
+        let new_book = Book {
+            cover_location: create_cover(item.to_string(), &write_directory),
+            book_location: item.replace("\\", "/"),
+            title,
+        };
+        books.push(new_book);
+    }
+    books.sort_by(|a, b| a.title.cmp(&b.title));
+
+    return books;
+}
+
 fn create_covers(dir: String) -> Vec<Book> {
     //file name to long
     let paths = fs::read_dir(&dir);
@@ -58,7 +75,20 @@ fn create_covers(dir: String) -> Vec<Book> {
             Err(_) => Vec::new(),
         };
 
-        let epubs: Vec<String> = paths
+        // let epubs: Vec<String> = paths
+        //     .unwrap()
+        //     .filter_map(|entry| {
+        //         let path = entry.unwrap().path();
+        //         if path.is_file() && path.extension().unwrap() == "epub" {
+        //             Some(path.to_str().unwrap().to_owned())
+        //         } else {
+        //             None
+        //         }
+        //     })
+        //     .filter_map(|b| chunk_binary_search(&book_json, b))
+        //     .collect();
+        //
+        paths
             .unwrap()
             .filter_map(|entry| {
                 let path = entry.unwrap().path();
@@ -68,9 +98,29 @@ fn create_covers(dir: String) -> Vec<Book> {
                     None
                 }
             })
-            .filter_map(|b| chunk_binary_search(&book_json, b))
-            .collect();
-        book_json.extend(create_book_vec(&epubs, &dir));
+            .for_each(|item| {
+                let item_normalized = item.replace("\\", "/");
+                let title = EpubDoc::new(&item_normalized)
+                    .unwrap()
+                    .mdata("title")
+                    .unwrap();
+                println!("{}", title);
+                let index = chunk_binary_search_index(&book_json, &title);
+                println!("{:?} index \n", index);
+                if !index.is_none() {
+                    print!("YOOOOOOOO");
+                    let new_book = Book {
+                        cover_location: create_cover(item_normalized.to_string(), &dir),
+                        book_location: item_normalized,
+                        title: title.clone(),
+                    };
+
+                    book_json.insert(index.unwrap(), new_book);
+                }
+            });
+        // book_json.extend(create_book_vec(&epubs, &dir));
+        // //Could this sort be done on the fly?
+        // book_json.sort_by(|a, b| a.title.cmp(&b.title));
     } else {
         println!("not Here");
 
@@ -98,7 +148,7 @@ fn chunk_binary_search(dataset: &Vec<Book>, key: String) -> Option<String> {
 
     let title = doc.mdata("title").unwrap();
 
-    let mut low = dataset.iter().position(|b| b.title[..1] == title[..1]);
+    let low = dataset.iter().position(|b| b.title[..1] == title[..1]);
     if low.is_none() {
         return Some(key);
     }
@@ -119,6 +169,32 @@ fn chunk_binary_search(dataset: &Vec<Book>, key: String) -> Option<String> {
     }
 
     Some(key)
+}
+fn chunk_binary_search_index(dataset: &Vec<Book>, key: &String) -> Option<usize> {
+    let title = key.to_string();
+
+    let low = dataset.iter().position(|b| b.title[..1] == title[..1]);
+
+    if let Some(index) = low {
+        let mut high = dataset
+            .iter()
+            .rposition(|b| b.title[..1] == title[..1])
+            .unwrap();
+        let mut unwrapped_low = index;
+        while unwrapped_low <= high {
+            let mid = (unwrapped_low + high) / 2;
+            if dataset[mid].title == title {
+                return None;
+            } else if dataset[mid].title < title {
+                unwrapped_low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        Some(unwrapped_low)
+    } else {
+        Some(dataset.len())
+    }
 }
 fn create_cover(book_directory: String, write_directory: &String) -> String {
     use rand::Rng;
